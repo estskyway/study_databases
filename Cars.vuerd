@@ -3,9 +3,9 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -187,
-    "scrollLeft": -337,
-    "zoomLevel": 0.8,
+    "scrollTop": 0,
+    "scrollLeft": 0,
+    "zoomLevel": 0.9,
     "show": {
       "tableComment": true,
       "columnComment": true,
@@ -178,29 +178,6 @@
             "id": "92a09cc6-09b2-4e2c-8997-00eafd050ec5"
           },
           {
-            "name": "UNIQUE_ID",
-            "comment": "유니크ID",
-            "dataType": "VARCHAR",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 72.7890625,
-              "widthComment": 60,
-              "widthDataType": 64.6005859375,
-              "widthDefault": 60
-            },
-            "id": "96900f68-6ea1-48c4-9b80-ce4623d62051"
-          },
-          {
             "name": "CARS_OPTION_CODE_ID",
             "comment": "자동차옵션코드ID",
             "dataType": "VARCHAR",
@@ -228,7 +205,7 @@
           "active": false,
           "left": 218.5,
           "top": 853,
-          "zIndex": 158,
+          "zIndex": 160,
           "widthName": 95.18359375,
           "widthComment": 70.61181640625
         },
@@ -412,9 +389,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 218,
-          "top": 564.25,
-          "zIndex": 157,
+          "left": 204.25,
+          "top": 569.25,
+          "zIndex": 159,
           "widthName": 139.97265625,
           "widthComment": 93
         },
@@ -499,8 +476,8 @@
           "columnIds": [
             "d4eefbbf-14ec-4805-9d58-16245c0138a2"
           ],
-          "x": 466.901611328125,
-          "y": 564.25,
+          "x": 453.151611328125,
+          "y": 569.25,
           "direction": "top"
         },
         "constraintName": "fk_cars_to_cars_option_code",
@@ -525,8 +502,8 @@
           "columnIds": [
             "f3731f49-5527-40df-bd77-24af2cc9eca1"
           ],
-          "x": 466.901611328125,
-          "y": 674.25,
+          "x": 453.151611328125,
+          "y": 679.25,
           "direction": "bottom"
         },
         "constraintName": "fk_cars_option_to_cars_option_code",
