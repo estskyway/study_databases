@@ -4,7 +4,7 @@
     "width": 2000,
     "height": 2000,
     "scrollTop": 0,
-    "scrollLeft": 0,
+    "scrollLeft": -8,
     "zoomLevel": 1,
     "show": {
       "tableComment": true,
@@ -162,7 +162,7 @@
             "id": "5c313800-e758-410f-9ad1-405633aaa3ad"
           },
           {
-            "name": "UNIQUE_ID",
+            "name": "MEMBERS_ID",
             "comment": "유니크ID",
             "dataType": "VARCHAR",
             "default": "",
@@ -177,7 +177,7 @@
               "pk": true,
               "fk": false,
               "pfk": false,
-              "widthName": 72.7890625,
+              "widthName": 87.9599609375,
               "widthComment": 60,
               "widthDataType": 64.6005859375,
               "widthDefault": 60
@@ -189,7 +189,7 @@
           "active": false,
           "left": 551,
           "top": 183.1111,
-          "zIndex": 250,
+          "zIndex": 265,
           "widthName": 70.61181640625,
           "widthComment": 60
         },
@@ -201,76 +201,7 @@
         "comment": "회원_취미",
         "columns": [
           {
-            "name": "HOBBY",
-            "comment": "취미",
-            "dataType": "VARCHAR",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": false
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 60,
-              "widthComment": 60,
-              "widthDataType": 64.6005859375,
-              "widthDefault": 60
-            },
-            "id": "c6d63c18-c0e2-4de2-95d0-8df826155fd3"
-          },
-          {
-            "name": "UNIQUE_ID",
-            "comment": "유니크ID",
-            "dataType": "VARCHAR",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 72.7890625,
-              "widthComment": 60,
-              "widthDataType": 64.6005859375,
-              "widthDefault": 60
-            },
-            "id": "730b67cd-b206-44eb-9953-abe9a9c326d0"
-          },
-          {
-            "name": "MEM_HOBBY_ID",
-            "comment": "회원_취미_ID",
-            "dataType": "VARCHAR",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": false
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 105.3017578125,
-              "widthComment": 81.4599609375,
-              "widthDataType": 64.6005859375,
-              "widthDefault": 60
-            },
-            "id": "0bcbf2da-a423-46cc-ab7c-f63903919290"
-          },
-          {
-            "name": "UNIQUE_ID",
+            "name": "MEMBERS_ID",
             "comment": "유니크ID",
             "dataType": "VARCHAR",
             "default": "",
@@ -285,19 +216,42 @@
               "pk": false,
               "fk": true,
               "pfk": false,
-              "widthName": 72.7890625,
+              "widthName": 87.9599609375,
               "widthComment": 60,
               "widthDataType": 64.6005859375,
               "widthDefault": 60
             },
-            "id": "7ccea1dd-79bf-47bd-a2c6-7498932717c5"
+            "id": "cc3f56e3-5564-4fdb-9370-72f11a47b1a7"
+          },
+          {
+            "name": "HOBBY_CORE_ID",
+            "comment": "유니크ID",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 112.53173828125,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "9c1640cb-04bd-45bd-b40a-c704c4a0d8da"
           }
         ],
         "ui": {
           "active": false,
-          "left": 4,
-          "top": 93.1116,
-          "zIndex": 243,
+          "left": 21,
+          "top": 326.1116,
+          "zIndex": 293,
           "widthName": 85.07177734375,
           "widthComment": 61.22998046875
         },
@@ -332,7 +286,30 @@
             "id": "0ffeec3c-0f84-4395-93c9-e966e59b1d31"
           },
           {
-            "name": "UNIQUE_ID",
+            "name": "MEM_LOGIN_ID",
+            "comment": "회원로그인ID",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 100.24267578125,
+              "widthComment": 80,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "2ccdb3a5-f2eb-4310-b160-cb914280fef7"
+          },
+          {
+            "name": "MEMBERS_ID",
             "comment": "유니크ID",
             "dataType": "VARCHAR",
             "default": "",
@@ -347,16 +324,32 @@
               "pk": false,
               "fk": true,
               "pfk": false,
-              "widthName": 72.7890625,
+              "widthName": 87.9599609375,
               "widthComment": 60,
               "widthDataType": 64.6005859375,
               "widthDefault": 60
             },
-            "id": "0bf0785d-69c0-4594-8dec-8d1c75d9e189"
-          },
+            "id": "cc34473a-b2b8-42ef-be22-7d2812fa98bd"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 32,
+          "top": 106,
+          "zIndex": 286,
+          "widthName": 80.0126953125,
+          "widthComment": 100.22998046875
+        },
+        "visible": true,
+        "id": "6cbfaf5f-8b34-48cc-bfc7-48b5ed9d4d1f"
+      },
+      {
+        "name": "HOBBY_CORE",
+        "comment": "취미코드",
+        "columns": [
           {
-            "name": "MEM_LOGIN_ID",
-            "comment": "회원로그인ID",
+            "name": "HOBBY",
+            "comment": "취미명",
             "dataType": "VARCHAR",
             "default": "",
             "option": {
@@ -370,24 +363,47 @@
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 100.24267578125,
-              "widthComment": 80,
+              "widthName": 60,
+              "widthComment": 60,
               "widthDataType": 64.6005859375,
               "widthDefault": 60
             },
-            "id": "2ccdb3a5-f2eb-4310-b160-cb914280fef7"
+            "id": "ee3669f7-327f-4f03-a967-d021b910518c"
+          },
+          {
+            "name": "HOBBY_CORE_ID",
+            "comment": "유니크ID",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 112.53173828125,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "d1ef2a2f-54d6-4d6e-86b0-03b111bb1f4a"
           }
         ],
         "ui": {
           "active": false,
-          "left": 10,
-          "top": 329,
-          "zIndex": 242,
-          "widthName": 80.0126953125,
-          "widthComment": 100.22998046875
+          "left": 21,
+          "top": 561,
+          "zIndex": 299,
+          "widthName": 92.3017578125,
+          "widthComment": 60
         },
         "visible": true,
-        "id": "6cbfaf5f-8b34-48cc-bfc7-48b5ed9d4d1f"
+        "id": "36dbf907-bf35-4ec0-b315-89697aa63e69"
       }
     ],
     "indexes": []
@@ -399,8 +415,8 @@
         "ui": {
           "active": false,
           "left": 549,
-          "top": 20,
-          "zIndex": 227,
+          "top": 25,
+          "zIndex": 300,
           "width": 128,
           "height": 101
         },
@@ -424,17 +440,17 @@
           "direction": "left"
         },
         "end": {
-          "tableId": "6cbfaf5f-8b34-48cc-bfc7-48b5ed9d4d1f",
+          "tableId": "4a821b0b-0700-4b29-8f19-f29729e6a68f",
           "columnIds": [
-            "0bf0785d-69c0-4594-8dec-8d1c75d9e189"
+            "cc3f56e3-5564-4fdb-9370-72f11a47b1a7"
           ],
-          "x": 421.84326171875,
-          "y": 394.25,
+          "x": 425.13232421875,
+          "y": 381.1116,
           "direction": "right"
         },
-        "constraintName": "fk_mem_info_to_mem_login",
+        "constraintName": "fk_mem_info_to_mem_hobby",
         "visible": true,
-        "id": "d904e88c-85b8-4f84-983b-b8750f69e3fa"
+        "id": "c6f55324-2554-4599-bf9a-ca8900e3a85a"
       },
       {
         "identification": false,
@@ -450,17 +466,43 @@
           "direction": "left"
         },
         "end": {
-          "tableId": "4a821b0b-0700-4b29-8f19-f29729e6a68f",
+          "tableId": "6cbfaf5f-8b34-48cc-bfc7-48b5ed9d4d1f",
           "columnIds": [
-            "7ccea1dd-79bf-47bd-a2c6-7498932717c5"
+            "cc34473a-b2b8-42ef-be22-7d2812fa98bd"
           ],
-          "x": 422.3623046875,
-          "y": 168.6116,
+          "x": 443.84326171875,
+          "y": 171.25,
           "direction": "right"
         },
-        "constraintName": "fk_mem_info_to_mem_hobby",
+        "constraintName": "fk_mem_info_to_mem_login",
         "visible": true,
-        "id": "9619b9d8-a83a-4632-9db7-cbb6fdcfe8db"
+        "id": "8a0f2154-f68a-48d8-b9e8-16cae7f8757e"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "36dbf907-bf35-4ec0-b315-89697aa63e69",
+          "columnIds": [
+            "d1ef2a2f-54d6-4d6e-86b0-03b111bb1f4a"
+          ],
+          "x": 223.066162109375,
+          "y": 561,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "4a821b0b-0700-4b29-8f19-f29729e6a68f",
+          "columnIds": [
+            "9c1640cb-04bd-45bd-b40a-c704c4a0d8da"
+          ],
+          "x": 223.066162109375,
+          "y": 436.1116,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_hobby_core_to_mem_hobby",
+        "visible": true,
+        "id": "b29e9478-235c-4fd2-8a16-6ca0567b2ab2"
       }
     ]
   }
