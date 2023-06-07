@@ -3,7 +3,7 @@ WHERE EmployeeID IN (7,9)
 GROUP BY EmployeeID; 
 
 
--- COUNT()	EmployeeID
+-- COUNT(*)	EmployeeID
 -- 14		7
 -- 6		9
 
