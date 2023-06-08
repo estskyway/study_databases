@@ -16,3 +16,13 @@ FROM
 -- 40		Peacock		Margaret
 
 -- REFER : https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_columns
+
+-- TEACHER`S EXAMPLE
+-- SELECT	MAX(T_INNER.CNT), T_INNER.EmployeeID, T_INNER.LASTNAME, T_INNER.FIRSTNAME
+-- FROM(
+--     SELECT COUNT(*) AS CNT, T_EMPS.EmployeeID, T_EMPS.LASTNAME, T_EMPS.FIRSTNAME 
+-- 	FROM EMPLOYEES AS T_EMPS
+-- 		INNER JOIN ORDERS AS T_ORDS
+-- 	    ON T_EMPS.EmployeeID = T_ORDS.EmployeeID
+-- 	GROUP BY T_EMPS.EmployeeID
+--     ) T_INNER
