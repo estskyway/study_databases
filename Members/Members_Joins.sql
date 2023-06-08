@@ -2,7 +2,7 @@
 -- from ?1
 -- 	inner join ?2
 --     on condition
-
+-- join 할 때 메인 테이블을 먼저 join해야 기술적으로 더 좋다.  
 SELECT COUNT(*), T_MEMS.AGE
 from members as T_MEMS
 	inner join members_login as T_MEMS_LOGIN
