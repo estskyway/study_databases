@@ -16,7 +16,7 @@ GROUP BY ProductName) AS T_OD_PRO
          GROUP BY T_ALL_INFO.OrderID;
             
 -- Number of Records: 51
--- ProductName	Price	CustomerName	주문 갯수
+-- 제품명	가격	고객명	주문 갯수
 -- Mozzarella di Giovanni	34.8	Wilman Kala	3
 -- Manjimup Dried Apples	53	Tradição Hipermercados	2
 -- Jack's New England Clam Chowder	9.65	Hanari Carnes	2
@@ -27,6 +27,9 @@ GROUP BY ProductName) AS T_OD_PRO
 -- Chang	19	Richter Supermarkt	4
 -- Original Frankfurter grüne Soße	13	Wellington Importadora	2
 -- Schoggi Schokolade	43.9	HILARIÓN-Abastos	1
+-- Chef Anton's Gumbo Mix	21.35	Ernst Handel	2
+-- Gravad lax	26	Centro comercial Moctezuma	2
+-- Outback Lager	15	Old World Delicatessen	2
 -- .
 -- .
 -- .
