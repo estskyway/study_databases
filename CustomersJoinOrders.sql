@@ -8,17 +8,17 @@ GROUP BY T_CUSTOMERS.CustomerName;
 
 -- Number of Records: 74
 
-CustomerName	T_ORDERS_CNT
-Ana Trujillo Emparedados y helados	1
-Antonio Moreno Taquería	1
-Around the Horn	2
-B's Beverages	1
-Berglunds snabbköp	3
-Blondel père et fils	4
-Bon app'	3
-Bottom-Dollar Marketse	4
-Bólido Comidas preparadas	1
-Centro comercial Moctezuma	1
+-- CustomerName	T_ORDERS_CNT
+-- Ana Trujillo Emparedados y helados	1
+-- Antonio Moreno Taquería	1
+-- Around the Horn	2
+-- B's Beverages	1
+-- Berglunds snabbköp	3
+-- Blondel père et fils	4
+-- Bon app'	3
+-- Bottom-Dollar Marketse	4
+-- Bólido Comidas preparadas	1
+-- Centro comercial Moctezuma	1
 -- .
 -- .
 -- .
