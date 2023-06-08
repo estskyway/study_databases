@@ -10,3 +10,9 @@ FROM
 	INNER JOIN ORDERS AS T_ORD
     ON T_EMP.EmployeeID = T_ORD.EmployeeID 
     GROUP BY T_ORD.EmployeeID) AS T_EMP_ORD;
+    
+-- Number of Records: 1
+-- CNT_MAX_ORD_EMP	LastName	FirstName
+-- 40		Peacock		Margaret
+
+-- REFER : https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_columns
