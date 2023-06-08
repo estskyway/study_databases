@@ -2,7 +2,7 @@
 -- 제품명은 ORDERS의 PRODUCT NAME 가격은 PRODUCT 고객명은 CUSTOMERS
 
 -- 완성 
-SELECT T_ALL_INFO.ProductName, T_ALL_INFO.Price, T_ALL_INFO.CustomerName, COUNT( T_ALL_INFO.OrderID) AS '주문 갯수'
+SELECT T_ALL_INFO.ProductName AS '제품명', T_ALL_INFO.Price AS '가격', T_ALL_INFO.CustomerName AS '고객명', COUNT( T_ALL_INFO.OrderID) AS '주문 갯수'
 FROM (SELECT *
 FROM (SELECT *
 FROM (SELECT * FROM OrderDetails AS T_OD
