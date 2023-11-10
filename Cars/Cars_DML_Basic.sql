@@ -1,0 +1,15 @@
+SELECT * FROM db_cars.factorys;
+
+SELECT COUNT(*) AS CNT FROM factorys;
+
+INSERT INTO factorys 
+(COMPANY_ID,COMPANY)
+VALUE
+('CAR-01', 'AUDI');
+
+UPDATE factorys 
+SET COMPANY = '페러리'
+WHERE COMPANY_ID = 'CAR-01' ;
+
+DELETE FROM factorys
+WHERE COMPANY_ID = 'CAR-01' ;
